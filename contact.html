@@ -4,52 +4,69 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
       <!-- NAVBAR START -->
-      <nav>
-        <ul class="navbar">
-          <li><a href="index.html">Anasayfa</a></li>
-          <li><a href="about.html">Hakkımızda</a></li>
-          <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">Enstrümanlar</a>
-            <div class="dropdown-content">
-              <a href="enstrumanlar/gitar.html">Gitar</a>
-              <a href="enstrumanlar/keman.html">Keman</a>
-              <a href="enstrumanlar/piano.html">Piyano</a>
-              <a href="enstrumanlar/davul.html">Davul</a>
-            </div>
-          </li>
-          <li><a href="contact.html">İletişim</a></li>
-        </ul>
-      </nav>
+<nav class="navbar navbar-expand-lg navbar-dark bg-danger shadow-lg">
+  <img src="/image/logo.jpg" class="w-auto" alt="sinem müzik logo">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="/index.html">Ana Sayfa <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/about.html">Hakkımızda</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/contact.html">İletişim</a>
+      </li>
+      <li class="nav-item active dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Enstrümanlar
+        </a>
+        <div class="dropdown-menu text-dark" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="/enstrumanlar/davul.html">Davul</a>
+          <a class="dropdown-item" href="/enstrumanlar/gitar.html">Gitar</a>
+          <a class="dropdown-item" href="/enstrumanlar/keman.html">Keman</a>
+          <a class="dropdown-item" href="/enstrumanlar/piano.html">Piyano</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
       <!-- NAVBAR END -->
-      <main class="contact-main">
+      <main class="contact-main mt-4">
         <section class="contact-section">
           <h2>MESAJ GÖNDER</h2>
           <h6></h6>
-          <form action="#" method="post" class="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required />
+<form>
+  <div class="form-group">
+    <label class="mt-3" for="exampleFormControlInput1">İsim :</label>
+    <input type="name" class="form-control shadow-sm" id="exampleFormControlInput1" placeholder="Sinem MÜZİK">
+    <label class="mt-3" for="exampleFormControlInput1">Email :</label>
+    <input type="email" class="form-control shadow-sm" id="exampleFormControlInput1" placeholder="name@example.com">
+    <label class="mt-3" for="exampleFormControlInput1">Telefon :</label>
+    <input type="telefon" class="form-control shadow-sm" id="exampleFormControlInput1" placeholder="5366006060">
+    <label class="mt-3" for="exampleFormControlInput1">Konu :</label>
+    <input type="konu" class="form-control shadow-sm" id="exampleFormControlInput1" placeholder="...">
+  </div>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
-
-            <label for="konu">Konu:</label>
-            <input type="text" id="konu" name="konu" required />
-
-            <label for="number">Telefon:</label>
-            <input type="tel" id="tel" name="tel" />
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-
-            <button type="submit">Send Message</button>
-          </form>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1"></label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+</form>
         </section>
-        <section class="contact-info">
+        <section class="contact-info text-center">
           <h2>İLETİŞİM BİLGİLERİ</h2>
           <h6></h6>
           <p>Adres: Örnek Mah. Örnek Sok. No:123, İstanbul, Türkiye</p>
@@ -59,8 +76,13 @@
       </main>
 
       <footer>
+      <footer class="text-center pt-4 my-md-5 pt-md-5 border-top">
         <p>&copy; 2024 Sinem Enstrüman. Tüm hakları saklıdır.</p>
       </footer>
     </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
   </body>
 </html>

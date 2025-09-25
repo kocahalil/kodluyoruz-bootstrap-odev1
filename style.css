@@ -5,3 +5,22 @@
   font-style: normal;
   color: rgb(82, 8, 8);
 }
+
+.suse-mono-uniquifier {
+  font-family: "SUSE Mono", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bolder;
+  font-style: normal;
+  color: brown;
+}
+
+.navbar {
+  border-radius: 25px;
+}
+.navbar img {
+  width: 65px !important;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
